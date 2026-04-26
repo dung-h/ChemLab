@@ -1,0 +1,12 @@
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.gz
+report.pdf
+BÁO CÁO HÓA ĐẠI CƯƠNG NHÓM 7.pdf

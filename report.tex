@@ -1,0 +1,64 @@
+% 'draft' mode can be used to speed up compilation
+\documentclass[twoside,final]{hcmut-report}
+
+% Times New Roman font
+\usepackage{mathptmx}
+
+% Encodings
+\usepackage{gensymb,textcomp}
+
+% Better tables
+\usepackage{array,longtable,multicol,multirow,siunitx,tabularx}
+
+% Better enum
+\usepackage{enumitem}
+
+% Graphics
+\usepackage{caption,float}
+
+% Add options for figures, like max width, framing, etc.
+\usepackage[export]{adjustbox}
+
+% References
+\usepackage[nameinlink]{cleveref}
+
+% Configurations
+\coursename{HÓA ĐẠI CƯƠNG (TN) (CH1004)}
+\reporttype{BÀI BÁO CÁO THÍ NGHIỆM HÓA ĐẠI CƯƠNG}
+\title{BẢN BÁO CÁO SỐ LIỆU THÍ NGHIỆM\\[1cm]\large{Nhóm báo cáo: Nhóm 2 - Lớp L55 - Học kỳ 252}}
+\advisor{& Nguyễn Thị Thanh Phượng &}
+\stuname{%
+  & Hồ Anh Dũng & 2310543 \\
+  & Phạm Gia Huy & 2411256 \\
+}
+
+\reportplace{Thành phố Hồ Chí Minh}
+\reporttime{tháng 04 năm 2026}
+
+% Set depth of numbering for counters
+\AtBeginDocument{\counterwithin{table}{section}}
+
+% Rename some sections
+\AtBeginDocument{\renewcommand*{\contentsname}{MỤC LỤC}}
+\AtBeginDocument{\renewcommand*{\listfigurename}{DANH MỤC HÌNH ẢNH}}
+\AtBeginDocument{\renewcommand*{\listtablename}{DANH MỤC BẢNG BIỂU}}
+
+\begin{document}
+\coverpage%
+
+\tableofcontents
+\listoffigures
+\listoftables
+%\lstlistoflistings{}
+
+\clearpage
+
+\input{chapters/baocao/bai2.tex}
+\input{chapters/baocao/bai4.tex}
+\input{chapters/baocao/bai8.tex}
+
+%\bibliographystyle{plain}
+%\bibliography{refs/example.bib}
+%\nocite{*}
+
+\end{document}
